@@ -9,8 +9,14 @@
       </mat-select>
     </mat-form-field>
   </mat-toolbar>
-
-<app-form-section></app-form-section>
+<main class="main">
+  <app-form-section></app-form-section>
+  <div class="news-container">
+<app-card *ngFor="let item of data"
+[item] = item
+></app-card>
+  </div>
+</main>
 
 
 </div>

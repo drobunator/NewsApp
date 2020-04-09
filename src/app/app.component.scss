@@ -6,9 +6,21 @@
   display: flex;
   justify-content: space-between;
 
+
   .select{
     max-width: 120px;
     font-size: 14px;
     margin-right: 20px;
   }
+}
+.news-container{
+  width: 100%;
+  margin: 0 auto;
+  padding: 30px 80px;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: start;
+  justify-content: space-between;
+  align-content: stretch;
+
 }

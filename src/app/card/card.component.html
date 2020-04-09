@@ -1,0 +1,15 @@
+
+<mat-card class="card">
+  <mat-card-header>
+    <mat-card-title>{{ item.title }}</mat-card-title>
+    <mat-card-subtitle>{{ item.author }}</mat-card-subtitle>
+  </mat-card-header>
+  <img mat-card-image src="{{ item.urlToImage }}" alt="news icon">
+  <mat-card-content>
+    <p>{{ item.description }}</p>
+  </mat-card-content>
+<mat-card-subtitle>{{ item.publishedAt | date: 'fullDate' }}</mat-card-subtitle>
+  <mat-card-actions>
+    <a target="_blank" mat-raised-button href="{{ item.url }}">Повна версія статті</a>
+  </mat-card-actions>
+</mat-card>

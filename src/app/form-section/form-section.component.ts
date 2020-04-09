@@ -7,7 +7,8 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FormSectionComponent implements OnInit {
 
-  selectedCountry = 'ua'
+  selectedCountry = 'ua';
+  selectedCategory = 'general';
   constructor() { }
 
   ngOnInit(): void {

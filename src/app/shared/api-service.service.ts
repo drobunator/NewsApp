@@ -1,6 +1,6 @@
 import {Injectable} from '@angular/core';
-import {environment} from "../../environments/environment";
-import {HttpClient} from "@angular/common/http";
+import {environment} from '../../environments/environment';
+import {HttpClient} from '@angular/common/http';
 
 @Injectable({
   providedIn: 'root'
@@ -13,13 +13,14 @@ export class ApiServiceService {
   lang = 'ua';
 
 
-
   constructor(private http: HttpClient) {
   }
 
   getNewsData() {
-    return this.http.get(`${this.url}/${this.endpoints}?language=${this.lang}&country=${this.country}&apiKey=${this.apiKey}`)
+    return this.http.get(`${this.url}/${this.endpoints}?language=${this.lang}&country=${this.country}&apiKey=${this.apiKey}`);
   }
-
+  getTopHeadlines() {
+    return this.http.get(`${this.url}/${this.endpoints}?language=${this.lang}&country=${this.country}&apiKey=${this.apiKey}`);
+  }
 
 }

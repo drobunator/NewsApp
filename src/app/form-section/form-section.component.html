@@ -5,12 +5,24 @@
       <mat-card-title>Пошук новин</mat-card-title>
     </mat-card-header>
 
-    <mat-form-field class="width">
+    <mat-form-field class="width country-select">
       <mat-select [(value)]="selectedCountry">
         <mat-option value="ua">Україна</mat-option>
         <mat-option value="ru">Россия</mat-option>
         <mat-option value="us">United States</mat-option>
         <mat-option value="en">England</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="width category-select">
+      <mat-select [(value)]="selectedCategory">
+        <mat-option value="business">Бізнес</mat-option>
+        <mat-option value="entertainment">Розваги</mat-option>
+        <mat-option value="general">Загальні новини</mat-option>
+        <mat-option value="health">Медецина</mat-option>
+        <mat-option value="science">Наука</mat-option>
+        <mat-option value="sports">Спорт</mat-option>
+        <mat-option value="technology">Технології</mat-option>
       </mat-select>
     </mat-form-field>
 
