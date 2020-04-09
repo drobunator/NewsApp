@@ -1,0 +1,25 @@
+<div class="form-block">
+
+  <mat-card>
+    <mat-card-header>
+      <mat-card-title>Пошук новин</mat-card-title>
+    </mat-card-header>
+
+    <mat-form-field class="width">
+      <mat-select [(value)]="selectedCountry">
+        <mat-option value="ua">Україна</mat-option>
+        <mat-option value="ru">Россия</mat-option>
+        <mat-option value="us">United States</mat-option>
+        <mat-option value="en">England</mat-option>
+      </mat-select>
+    </mat-form-field>
+
+    <mat-form-field class="width">
+    <mat-label>Введіть ваш пошуковий запит</mat-label>
+    <input matInput>
+    </mat-form-field>
+
+    <button mat-raised-button>Пошук <mat-icon>search</mat-icon></button>
+  </mat-card>
+
+</div>

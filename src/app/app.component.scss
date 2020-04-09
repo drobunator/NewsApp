@@ -1,0 +1,14 @@
+.container{
+  width: 100%;
+}
+
+.toolbar{
+  display: flex;
+  justify-content: space-between;
+
+  .select{
+    max-width: 120px;
+    font-size: 14px;
+    margin-right: 20px;
+  }
+}
