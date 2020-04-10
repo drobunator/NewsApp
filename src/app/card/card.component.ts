@@ -6,14 +6,15 @@ import {Component, Input, OnInit} from '@angular/core';
   styleUrls: ['./card.component.scss']
 })
 export class CardComponent implements OnInit {
-  url = 'https://techcrunch.com/wp-content/uploads/2019/04/bitcoin-bitfinex.jpg?w=750';
-  newsUrl = 'https://techcrunch.com/2020/03/12/bitcoin-is-also-having-a-very-very-bad-day/';
+  emptyImageurl = 'https://stockpictures.io/wp-content/uploads/2020/01/image-not-found-big-768x432.png';
   @Input() item;
 
   constructor() { }
 
   ngOnInit(): void {
-    console.log(this.item);
   }
 
+  loaded(e) {
+    e.target.src = this.emptyImageurl
+  }
 }

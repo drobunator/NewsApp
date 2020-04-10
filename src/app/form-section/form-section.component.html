@@ -10,7 +10,7 @@
         <mat-option value="ua">Україна</mat-option>
         <mat-option value="ru">Россия</mat-option>
         <mat-option value="us">United States</mat-option>
-        <mat-option value="en">England</mat-option>
+        <mat-option value="gb">England</mat-option>
       </mat-select>
     </mat-form-field>
 
@@ -28,10 +28,10 @@
 
     <mat-form-field class="width">
     <mat-label>Введіть ваш пошуковий запит</mat-label>
-    <input matInput>
+    <input matInput [(ngModel)]="searchValue">
     </mat-form-field>
 
-    <button mat-raised-button>Пошук <mat-icon>search</mat-icon></button>
+    <button mat-raised-button (click)="onSubmit()">Пошук <mat-icon>search</mat-icon></button>
   </mat-card>
 
 </div>

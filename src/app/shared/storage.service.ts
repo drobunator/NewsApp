@@ -1,5 +1,5 @@
 import {Injectable} from '@angular/core';
-import {BehaviorSubject} from 'rxjs';
+import {BehaviorSubject, Observable} from 'rxjs';
 import {ApiServiceService} from './api-service.service';
 
 @Injectable({
@@ -16,5 +16,8 @@ export class StorageService {
 
   get newsData(){
     return this.data.asObservable();
+  }
+  setDataValue(value){
+    this.data.next(value);
   }
 }
